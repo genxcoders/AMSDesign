@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Attendance Management System Design">
+		<meta name="keywords" content="Attendance Management System, AMS, GenXCoders, GXCPL, Best IT Company, Nagpur">
+		<meta name="author" content="GenXCoders Pvt Ltd">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<title>Admin Dashboard</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="assets/DataTables/datatables.css" />
+		<link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet"> 
+		<link rel="stylesheet" type="text/css" href="assets/css/gxcpl-ams.css" />
+	</head>
+	<body>
+
+		<!-- Navbar -->
+		<div id="gxcpl" class="navbar navbar-default navbar-fixed-top gxcpl-shadow-2 gxcpl-fs-1" role="navigation">
+		    <div class="container-fluid">
+		        <div class="navbar-header"><a class="navbar-brand" href="#">AMS</a>
+		            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+		            </button>
+		        </div>
+		        <div class="collapse navbar-collapse navbar-menubuilder">
+		            <ul class="nav navbar-nav navbar-right">
+		                <li>
+		                	<a href="#!">Home</a>
+		                </li>
+		                <li class="active">
+		                	<a href="#!">Attendance</a>
+		                </li>
+		                <li class="dropdown">
+		                	<a href="#!" class="dropdown-toggle" data-toggle="dropdown">
+		                		Username <b class="caret"></b>
+		                	</a>
+		                    <ul class="dropdown-menu" role="menu">
+		                        <li>
+		                        	<a href="#!">Profile</a>
+		                        </li>
+		                        <li role="separator" class="divider"></li>
+		                        <li>
+		                        	<a href="#!">Logout</a>
+		                        </li>
+		                    </ul>
+		                </li>
+		            </ul>
+		        </div>
+		    </div>
+		</div>
+		<!-- Navbar -->
+
+		<!-- Site Content -->
+		<div class="gxcpl-site-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+
+						<div class="row">
+							<div class="col-md-12">
+								<!-- Todays' Date -->
+								<div class="gxcpl-card gxcpl-shadow-1">
+									<div class="gxcpl-card-body-no-header text-center gxcpl-padding-5-10 gxcpl-fs-20px">
+										Oct, 29, 2019
+									</div>
+									<div class="gxcpl-card-footer text-center gxcpl-padding-5-10">
+										Today's Date
+									</div>
+								</div>
+								<div class="gxcpl-ptop-20"></div>
+								<!-- Todays' Date -->
+							</div>
+						</div>
+
+						<div class="row">
+							
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<!-- Employee Present Count -->
+								<div class="gxcpl-card gxcpl-shadow-1">
+									<div class="gxcpl-card-header gxcpl-fs-1 gxcpl-padding-5-10">
+										Onroll Status
+									</div>
+									<div class="gxcpl-card-body gxcpl-padding-5-10" >
+										<div class="row">
+											<div class="col-md-9 col-sm-9 col-xs-9 gxcpl-fs-1">
+												Present
+											</div>
+											<div class="col-md-3 col-sm-3 col-xs-3">
+												1
+											</div>
+										</div>
+									</div>
+									<div class="gxcpl-card-body gxcpl-padding-5-10" >
+										<div class="row">
+											<div class="col-md-9 col-sm-9 col-xs-9 gxcpl-fs-1">
+												Absent
+											</div>
+											<div class="col-md-3 col-sm-3 col-xs-3">
+												3
+											</div>
+										</div>
+									</div>
+									<div class="gxcpl-card-body gxcpl-padding-5-10" >
+										<div class="row">
+											<div class="col-md-9 col-sm-9 col-xs-9 gxcpl-fs-1">
+												Late
+											</div>
+											<div class="col-md-3 col-sm-3 col-xs-3">
+												0
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="gxcpl-ptop-20"></div>
+								<!-- Employee Present Count -->
+							</div>
+						
+							<div class="col-md-12 col-sm-6 col-xs-6">
+								<!-- Employee Count -->
+								<div class="gxcpl-card gxcpl-shadow-1">
+									<div class="gxcpl-card-header gxcpl-fs-1 gxcpl-padding-5-10">
+										Total Employees
+									</div>
+									<div class="gxcpl-card-body text-center gxcpl-padding-5-10" style="font-size: 40px;">
+										4
+									</div>									
+								</div>
+								<div class="gxcpl-ptop-20"></div>
+								<!-- Employee Count -->
+							</div>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<div class="gxcpl-card gxcpl-shadow-1">
+							<div class="gxcpl-card-header gxcpl-fs-1">
+								<strong>Filter Attendance by Employee</strong>
+							</div>
+							<div class="gxcpl-card-body gxcpl-padding-5-10">
+								<!-- Attendance Filter Form -->
+								<form>
+									<div class="row" class="gxcpl-search-attendance-form">
+										<div class="col-md-4 text-center">
+											<div class="input-group">
+												<div class="input-group-addon" >
+													<span><i class="fa fa-user"></i></span>
+												</div>
+												<select class="form-control gxcpl-date">
+													<option>Select Employee</option>
+												</select>
+											</div>
+											<div class="gxcpl-ptop-10"></div>
+										</div>
+
+										<div class="col-md-4 text-center">
+											<div class="input-group">
+												<div class="input-group-addon" >
+													<span><i class="fa fa-calendar"></i></span>
+												</div>
+												<select class="form-control gxcpl-date">
+													<option>Select Month</option>
+												</select>
+											</div>
+											<div class="gxcpl-ptop-10"></div>
+										</div>
+
+										<div class="col-md-4 text-center">
+											<button type="submit" class="btn btn-primary btn-sm form-control">
+												<i class="fa fa-eye"></i> VIEW ATTENDANCE
+											</button>
+											<div class="gxcpl-ptop-10"></div>
+										</div>
+									</div>
+								</form>
+								<!-- Attendance Filter Form -->
+							</div>
+						</div>
+
+						<div class="gxcpl-ptop-20"></div>
+
+						<div class="gxcpl-card gxcpl-shadow-1">
+							<div class="gxcpl-card-header gxcpl-fs-1 gxcpl-padding-5-10">
+								<div class="row">
+									<div class="col-md-9">
+										Employee On Roll Status
+									</div>
+									<div class="col-md-3">
+										<small class="text-muted">
+										<span class="gxcpl-green-glow gxcpl-shadow-1"></span> 
+										<strong>Present</strong>
+										<span class="gxcpl-red-glow gxcpl-shadow-1"></span> 
+										<strong>Absent</strong>
+									</small>
+									</div>
+								</div>
+							</div>
+							<div class="gxcpl-card-body gxcpl-padding-5-10">
+								<table id="attTable" class="table table-striped table-bordered" style="width:100%">
+									<thead>
+										<tr>
+											<th>
+												Emp Id
+											</th>
+											<th>
+												Full Name
+											</th>
+											<th>
+												Department
+											</th>
+											<th>
+												Designation
+											</th>
+											<th>
+												Status
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												4369002
+											</td>
+											<td>
+												Priyasingh Chandel
+											</td>
+											<td>
+												Management
+											</td>
+											<td>
+												CEO
+											</td>
+											<td>
+												<span class="gxcpl-red-glow gxcpl-shadow-1"></span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												4369001
+											</td>
+											<td>
+												Aashish Handa
+											</td>
+											<td>
+												Management
+											</td>
+											<td>
+												CTO
+											</td>
+											<td>
+												<span class="gxcpl-green-glow gxcpl-shadow-1"></span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												4369003
+											</td>
+											<td>
+												Sapanasingh Chandel
+											</td>
+											<td>
+												Management
+											</td>
+											<td>
+												COO
+											</td>
+											<td>
+												<span class="gxcpl-red-glow gxcpl-shadow-1"></span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												43691802
+											</td>
+											<td>
+												Kalyani Kherde
+											</td>
+											<td>
+												Development
+											</td>
+											<td>
+												Jr. Developer
+											</td>
+											<td>
+												<span class="gxcpl-red-glow gxcpl-shadow-1"></span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="gxcpl-ptop-20"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Site Content -->
+
+		<!-- Footer -->
+		<footer class="footer">
+			AMS | <i class="fa fa-copyright"></i> <a href="https://www.gxcpl.com" target="_blank">GXCPL</a>
+		</footer>
+		<!-- Footer -->
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="assets/js/jquery-2.0.0.js"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+		<script type="text/javascript" src="assets/DataTables/datatables.js"></script>
+		<!-- Additional Scripts here -->
+		<script type="text/javascript">
+			// Call to DataTables
+			$(document).ready( function (){
+				$('#attTable').DataTable({
+					responsive: true
+				});
+			});
+			// Call to DataTables
+		</script>
+		<!-- Additional Scripts here -->
+		<!-- Scripts -->
+	</body>
+</html>

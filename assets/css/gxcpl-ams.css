@@ -1,0 +1,233 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	background: #e2e1e0;
+	font-family: 'Muli', sans-serif;
+	margin-bottom: 40px;
+}
+
+/* Spacing */
+.gxcpl-ptop-5 {
+	padding-top: 5px;
+}
+.gxcpl-ptop-10 {
+	padding-top: 10px;
+}
+.gxcpl-ptop-20 {
+	padding-top: 20px;
+}
+.gxcpl-ptop-30 {
+	padding-top: 30px;
+}
+.gxcpl-ptop-40 {
+	padding-top: 40px;
+}
+.gxcpl-ptop-50 {
+	padding-top: 50px;
+}
+.gxcpl-padding-5-10 {
+	padding: 5px 10px;
+}
+/* Spacing */
+
+/* No Spacing */
+.gxcpl-no-margin {
+	margin: 0px !important;
+}
+.gxcpl-no-padding {
+	padding: 0px !important;
+}
+/* No Spacing */
+
+/*Navbar*/
+#gxcpl.navbar-default .navbar-brand {
+    color: rgba(255, 255, 255, 1);
+}
+#gxcpl.navbar-default {
+    font-size: 14px;
+    background-color: rgba(51, 122, 183, 1);
+    border-bottom-width: 0px;
+}
+#gxcpl.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(51, 122, 183, 1);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+#gxcpl.navbar-default .navbar-nav>li>a:hover,
+#gxcpl.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(33, 33, 33, 1);
+    background-color: rgba(255, 223, 0, 1);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+#gxcpl.navbar-default .navbar-nav>.active>a,
+#gxcpl.navbar-default .navbar-nav>.active>a:hover,
+#gxcpl.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(33, 33, 33, 1);
+    background-color: rgba(255, 223, 0, 1);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+#gxcpl.navbar-default .navbar-toggle {
+    border-color: #ffdf00;
+}
+#gxcpl.navbar-default .navbar-toggle:hover,
+#gxcpl.navbar-default .navbar-toggle:focus {
+    background-color: #ffdf00;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+#gxcpl.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffdf00;
+}
+#gxcpl.navbar-default .navbar-toggle:hover .icon-bar,
+#gxcpl.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #337ab7;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+/*Navbar*/
+
+/* Shadow */
+.gxcpl-shadow-1 {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.gxcpl-shadow-2 {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+/* Shadow */
+
+/* Transition */
+.gxcpl-transition {
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+/* Transition */
+
+/* Font Colors */
+.gxcpl-fc-212121 {
+	color: #212121 !important;
+}
+/* Font Colors */
+
+/* Font Settings */
+.gxcpl-fs-1 {
+	font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.35);
+}
+
+.gxcpl-fs-20px {
+	font-size: 20px;
+}
+/* Font Settings */
+
+/* Containers */
+.gxcpl-site-content {
+	width: 100%;
+	min-height: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-top: 70px;
+}
+
+.gxcpl-card {
+	width: 100%;
+	margin: auto;
+	display: block;
+	border-radius: 2px;
+	background-color: #ffffff;
+}
+.gxcpl-card > .gxcpl-card-header {
+	width: 100%;
+	padding: 5px 10px;
+	border-radius: 2px 2px 0px 0px;
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+.gxcpl-card > .gxcpl-card-body {
+	width: 100%;
+}
+.gxcpl-card > .gxcpl-card-body-no-header {
+	width: 100%;
+	border-radius: 2px 2px 0px 0px;
+}
+.gxcpl-card > .gxcpl-card-body-no-footer {
+	width: 100%;
+	border-radius: 0px 0px 2px 2px;
+}
+.gxcpl-card > .gxcpl-card-footer {
+	width: 100%;
+	border-radius: 0px 0px 2px 2px;
+	border-top: 1px solid rgba(0,0,0,0.15);
+}
+img.gxcpl-profile-image {
+	width: 80px;
+	height: 80px;
+	margin: auto;
+	display: block;
+	border-radius: 50%;
+}
+/* Containers */
+
+
+/* Attendance Status */
+.gxcpl-green-glow {
+	display: inline-block;
+	border-radius: 50%;
+	width: 9px;
+	height: 9px;
+	line-height: 9px;
+	background-color: #27ae60;
+}
+.gxcpl-red-glow {
+	display: inline-block;
+	border-radius: 50%;
+	width: 9px;
+	height: 9px;
+	line-height: 9px;
+	background-color: #c0392b;
+}
+.gxcpl-search-attendance-form {
+	height: 40px; 
+	line-height: 40px;
+}
+.gxcpl-search-attendance-form > form {
+	margin-bottom: 20px;
+}
+/* Attendance Status */
+
+/*Form*/
+input.gxcpl-date {
+	width: auto;
+	line-height: 20px !important;
+	margin: auto;
+	display: block;
+}
+/*Form*/
+
+/* Footer */
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #337ab7;
+	color: #ffffff;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+.footer > a {
+	color: #ffffff;
+}
+/* Footer */
+
+/*RWD*/
+@-ms-viewport{
+	width: device-width;
+}
+/*RWD*/
