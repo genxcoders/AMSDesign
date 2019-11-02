@@ -181,6 +181,22 @@ img.gxcpl-profile-image {
 	line-height: 9px;
 	background-color: #27ae60;
 }
+.gxcpl-yellow-glow {
+	display: inline-block;
+	border-radius: 50%;
+	width: 9px;
+	height: 9px;
+	line-height: 9px;
+	background-color: #f1c40f;
+}
+.gxcpl-orange-glow {
+	display: inline-block;
+	border-radius: 50%;
+	width: 9px;
+	height: 9px;
+	line-height: 9px;
+	background-color: #d35400;
+}
 .gxcpl-red-glow {
 	display: inline-block;
 	border-radius: 50%;

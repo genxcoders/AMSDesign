@@ -165,7 +165,7 @@
 
 										<div class="col-md-4 text-center">
 											<button type="submit" class="btn btn-primary btn-sm form-control">
-												<i class="fa fa-eye"></i> VIEW ATTENDANCE
+												<i class="fa fa-eye"></i> FILTER ATTENDANCE
 											</button>
 											<div class="gxcpl-ptop-10"></div>
 										</div>
@@ -180,15 +180,19 @@
 						<div class="gxcpl-card gxcpl-shadow-1">
 							<div class="gxcpl-card-header gxcpl-fs-1 gxcpl-padding-5-10">
 								<div class="row">
-									<div class="col-md-9">
+									<div class="col-md-8">
 										Employee On Roll Status
 									</div>
-									<div class="col-md-3">
+									<div class="col-md-4 text-center">
 										<small class="text-muted">
 										<span class="gxcpl-green-glow gxcpl-shadow-1"></span> 
 										<strong>Present</strong>
 										<span class="gxcpl-red-glow gxcpl-shadow-1"></span> 
 										<strong>Absent</strong>
+										<span class="gxcpl-orange-glow gxcpl-shadow-1"></span> 
+										<strong>Late</strong>
+										<span class="gxcpl-yellow-glow gxcpl-shadow-1"></span> 
+										<strong>Leave</strong>
 									</small>
 									</div>
 								</div>
@@ -309,7 +313,8 @@
 			// Call to DataTables
 			$(document).ready( function (){
 				$('#attTable').DataTable({
-					responsive: true
+					responsive: true,
+					autoWidth: false
 				});
 			});
 			// Call to DataTables
