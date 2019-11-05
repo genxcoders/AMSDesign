@@ -105,7 +105,7 @@
 									<div class="gxcpl-card-body gxcpl-padding-5-10" >
 										<div class="row">
 											<div class="col-md-9 col-sm-9 col-xs-9 gxcpl-fs-1">
-												Present
+												<span class="gxcpl-green-glow gxcpl-shadow-1"></span> Present
 											</div>
 											<div class="col-md-3 col-sm-3 col-xs-3">
 												1
@@ -115,20 +115,30 @@
 									<div class="gxcpl-card-body gxcpl-padding-5-10" >
 										<div class="row">
 											<div class="col-md-9 col-sm-9 col-xs-9 gxcpl-fs-1">
-												Absent
+												<span class="gxcpl-red-glow gxcpl-shadow-1"></span> Absent
 											</div>
 											<div class="col-md-3 col-sm-3 col-xs-3">
-												3
+												1
 											</div>
 										</div>
 									</div>
 									<div class="gxcpl-card-body gxcpl-padding-5-10" >
 										<div class="row">
 											<div class="col-md-9 col-sm-9 col-xs-9 gxcpl-fs-1">
-												Late
+												<span class="gxcpl-orange-glow gxcpl-shadow-1"></span> Late
 											</div>
 											<div class="col-md-3 col-sm-3 col-xs-3">
-												0
+												1
+											</div>
+										</div>
+									</div>
+									<div class="gxcpl-card-body gxcpl-padding-5-10" >
+										<div class="row">
+											<div class="col-md-9 col-sm-9 col-xs-9 gxcpl-fs-1">
+												<span class="gxcpl-yellow-glow gxcpl-shadow-1"></span> Leave
+											</div>
+											<div class="col-md-3 col-sm-3 col-xs-3">
+												1
 											</div>
 										</div>
 									</div>
@@ -154,7 +164,22 @@
 												<div class="input-group-addon" >
 													<span>From</span>
 												</div>
-												<input type="date" class="form-control gxcpl-date">
+												<!-- <input type="date" class="form-control gxcpl-date"> -->
+												<select class="form-control gxcpl-date">
+													<option value="-">Select Month</option>
+													<option value="january">January</option>
+													<option value="february">February</option>
+													<option value="march">March</option>
+													<option value="april">April</option>
+													<option value="may">May</option>
+													<option value="june">June</option>
+													<option value="july">July</option>
+													<option value="august">August</option>
+													<option value="september">September</option>
+													<option value="october">October</option>
+													<option value="november">November</option>
+													<option value="december">December</option>
+												</select>
 											</div>
 											<div class="gxcpl-ptop-10"></div>
 										</div>
@@ -164,14 +189,29 @@
 												<div class="input-group-addon" >
 													<span>To</span>
 												</div>
-												<input type="date" class="form-control gxcpl-date">
+												<!-- <input type="date" class="form-control gxcpl-date"> -->
+												<select class="form-control gxcpl-date">
+													<option value="-">Select Month</option>
+													<option value="january">January</option>
+													<option value="february">February</option>
+													<option value="march">March</option>
+													<option value="april">April</option>
+													<option value="may">May</option>
+													<option value="june">June</option>
+													<option value="july">July</option>
+													<option value="august">August</option>
+													<option value="september">September</option>
+													<option value="october">October</option>
+													<option value="november">November</option>
+													<option value="december">December</option>
+												</select>
 											</div>
 											<div class="gxcpl-ptop-10"></div>
 										</div>
 
 										<div class="col-md-4 text-center">
 											<button type="submit" class="btn btn-primary btn-sm form-control">
-												<i class="fa fa-search"></i> SEARCH
+												<i class="fa fa-filter"></i> FILTER
 											</button>
 											<div class="gxcpl-ptop-10"></div>
 										</div>
@@ -239,6 +279,34 @@
 										<tr>
 											<td>
 												Oct 02
+											</td>
+											<td>
+												1015
+											</td>
+											<td>
+												2200
+											</td>
+											<td>
+												<span class="gxcpl-orange-glow gxcpl-shadow-1"></span> <!-- Late -->
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Oct 03
+											</td>
+											<td>
+												1000
+											</td>
+											<td>
+												1600
+											</td>
+											<td>
+												<span class="gxcpl-yellow-glow gxcpl-shadow-1"></span> <!-- Leave -->
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Oct 04
 											</td>
 											<td>
 												-

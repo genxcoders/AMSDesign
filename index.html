@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Attendance Management System Design">
+		<meta name="keywords" content="Attendance Management System, AMS, GenXCoders, GXCPL, Best IT Company, Nagpur">
+		<meta name="author" content="GenXCoders Pvt Ltd">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<title>Admin Dashboard</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="assets/DataTables/datatables.css" />
+		<link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet"> 
+		<link rel="stylesheet" type="text/css" href="assets/css/gxcpl-ams.css" />
+	</head>
+	<body>
+
+		<!-- Navbar -->
+		<div id="gxcpl" class="navbar navbar-default navbar-fixed-top gxcpl-shadow-2 gxcpl-fs-1" role="navigation">
+		    <div class="container-fluid">
+		        <div class="navbar-header"><a class="navbar-brand" href="#">AMS</a>
+		            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+		            </button>
+		        </div>
+		        <div class="collapse navbar-collapse navbar-menubuilder">
+		            <ul class="nav navbar-nav navbar-right">
+		                <li class="active">
+		                	<a href="#!">Home</a>
+		                </li>
+		                <li>
+		                	<a href="#!">Attendance</a>
+		                </li>
+		                <li class="dropdown">
+		                	<a href="#!" class="dropdown-toggle" data-toggle="dropdown">
+		                		Username <b class="caret"></b>
+		                	</a>
+		                    <ul class="dropdown-menu" role="menu">
+		                        <li>
+		                        	<a href="#!">Profile</a>
+		                        </li>
+		                        <li role="separator" class="divider"></li>
+		                        <li>
+		                        	<a href="#!">Logout</a>
+		                        </li>
+		                    </ul>
+		                </li>
+		            </ul>
+		        </div>
+		    </div>
+		</div>
+		<!-- Navbar -->
+
+		<!-- Site Content -->
+		<div class="gxcpl-site-content">
+			<div class="container">
+				<div class="row">
+
+				</div>
+			</div>
+		</div>
+		<!-- Site Content -->
+
+		<!-- Footer -->
+		<footer class="footer">
+			AMS | <i class="fa fa-copyright"></i> <a href="https://www.gxcpl.com" target="_blank">GXCPL</a>
+		</footer>
+		<!-- Footer -->
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="assets/js/jquery-2.0.0.js"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+		<script type="text/javascript" src="assets/DataTables/datatables.js"></script>
+		<!-- Additional Scripts here -->
+		<script type="text/javascript">
+			// Call to DataTables
+			$(document).ready( function (){
+				$('#attTable').DataTable({
+					responsive: true,
+					autoWidth: false
+				});
+			});
+			// Call to DataTables
+		</script>
+		<!-- Additional Scripts here -->
+		<!-- Scripts -->
+	</body>
+</html>
